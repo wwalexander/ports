@@ -16,5 +16,4 @@ patchfiles       patch-parse-base-block-clang-fallthrough-attribute-expected-exp
 fetch.type       git
 git.url          git://linuxtv.org/edid-decode.git
 git.branch       8a8d673
-                 
-configure {}
+use_configure    no
