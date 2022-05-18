@@ -1,0 +1,13 @@
+--- Makefile.orig	2022-05-17 21:54:35.000000000 -0400
++++ Makefile	2022-05-17 22:13:33.000000000 -0400
+@@ -4,8 +4,8 @@
+ else
+ 	UNAME_S := $(shell uname -s)
+ 	ifeq ($(UNAME_S),Darwin)
+-		bindir ?= /usr/local/sbin
+-		mandir ?= /usr/local/share/man
++		bindir ?= /opt/local/bin
++		mandir ?= /opt/local/share/man
+ 	else
+ 		bindir ?= /usr/bin
+ 		mandir ?= /usr/share/man

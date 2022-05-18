@@ -1,0 +1,20 @@
+PortSystem       1.0
+name             edid-decode
+version          git-8a8d673
+categories       sysutils
+platforms        darwin
+maintainers      @wwalexander
+description      Decode EDID data in human-readable format
+long_description edid-decode decodes EDID monitor description data in human-readable format
+homepage         https://git.linuxtv.org/edid-decode.git
+master_sites     git://linuxtv.org/edid-decode.git
+checksums        rmd160 fa77fe04ab619a7092428a29cab89d575c600d07 \
+                 sha256 a1cc12ad7bf1d46c4344a3a3f6d14e6ccb77d9d40344e53d7d15a857ba38d806
+patchfiles       patch-parse-base-block-clang-fallthrough-attribute-expected-expression-fix.diff \
+                 patch-parse-cta-block-clang-fallthrough-attribute-expected-expression-fix.diff \
+                 patch-destdir-variable-fix.diff
+fetch.type       git
+git.url          git://linuxtv.org/edid-decode.git
+git.branch       8a8d673
+                 
+configure {}
